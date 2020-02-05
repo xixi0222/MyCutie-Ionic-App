@@ -1,7 +1,7 @@
 # MyCutie-Ionic-App
 
 ### 界面展示截图
-![login](https://github.com/xixi0222/MyCutie-Ionic-App/raw/master/screenshots/)
+![screennshots](https://github.com/xixi0222/MyCutie-Ionic-App/raw/master/screenshots/)
 
 ### APP 简介
 1. **MyCutie**，使用**Ionic**开发框架混合开发的一个APP。后端使用**Bmob后端云**和**阿里云**。采用**C/S**模式。  
