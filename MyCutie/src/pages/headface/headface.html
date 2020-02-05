@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Change my Headface</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- 两个按钮，第一个是选择拍照还是从文件，第二个是上传 -->
+  <ion-buttons>
+    <button ion-button color="danger" icon-left (click)="presentActionSheet()">
+      <ion-icon name="images"></ion-icon>Choose one
+    </button>
+    <button ion-button icon-left color="danger" (click)="uploadImage()" [disabled]="lastPic === null">
+      <ion-icon name="cloud"></ion-icon>Upload
+    </button>
+  </ion-buttons>
+
+  <!-- 显示照片 -->
+  <img [src]="path" style="width:60%;height:60%;" [hidden]="lastPic === null">
+  <h3 [hidden]="lastPic !== null">You can take a picture now or grab a picture from your photo album.</h3>
+
+</ion-content>

@@ -1,0 +1,52 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar style="opacity: 0.6" no-border-bottom color="danger">
+    <ion-title>HOME</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div [hidden]="notLogin==false">
+    <div class="list card">
+
+      <div class="item item-avatar">
+
+        <h2>MyCutie</h2>
+        <p>Hi, I can help you figure out all of things about girls.</p>
+      </div>
+      <div class="item item-image">
+        <img src={{cover}}>
+      </div>
+    </div>
+    <button ion-button outline block color="danger" (click)="gotoLoginPage()">
+      LOGIN
+    </button>
+  </div>
+  <div [hidden]="login==false">
+    <ion-card>
+      <ion-card-header text-center>
+        <ion-card-title>MyCutie</ion-card-title>
+      </ion-card-header>
+      <ion-list class="">
+        <button ion-item (click)="gotoHeadFace()">
+          <ion-avatar item-start>
+            <img src="{{headface}}">
+          </ion-avatar>
+          <h2>{{nickname}}</h2>
+          <p>查看个人主页或者编辑简介</p>
+
+        </button>
+      </ion-list>
+    </ion-card>
+    <br><br><br>
+    <button class="logout" ion-button block (click)="logout()">
+      LOGOUT
+    </button>
+
+  </div>
+</ion-content>

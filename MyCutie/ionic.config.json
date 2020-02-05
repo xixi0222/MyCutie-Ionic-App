@@ -1,0 +1,10 @@
+{
+  "name": "MyCutie",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [ { "path": "/api", "proxyUrl": "http://www.sjckedaoyun.top:8890/getRecommend/" }
+   ]
+
+}

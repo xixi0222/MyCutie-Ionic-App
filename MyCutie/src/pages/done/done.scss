@@ -1,0 +1,72 @@
+page-done {
+    .note-container {
+      padding: 10px;
+      column-count: 2;
+      column-gap: 0;
+  
+      .note {
+        break-inside: avoid;
+        box-sizing: border-box;
+        padding: 5px;
+  
+        overflow: hidden;
+  
+        .note-title {
+          border-radius: 5px 5px 0 0;
+          background: #ce5959;
+          padding: 10px 15px;
+          font-size: 13px;
+          text-align: center;
+          color: #f1f1f1;
+        }
+  
+        .note-content {
+          background: #dd9898;
+          color: #f7f0f0;
+          padding: 15px;
+          font-size: 12px;
+          line-height: 20px;
+          // max-height: 220px;
+          overflow: hidden;
+  
+          .text {
+            max-height: 200px;
+            overflow: hidden;
+          }
+  
+          .time {
+            margin-top: 10px;
+          }
+  
+          ol {
+            margin: 0;
+            padding-left: 15px;
+          }
+        }
+  
+        .note-address {
+          border-top: 1px solid #f3e3ee;
+          background: #8d7a8a;
+          color: #dbdbdb;
+          display: flex;
+          align-items: center;
+          padding: 5px;
+          font-size: 12px;
+  
+          .icon {
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+  
+    .note-container>div:nth-child(1) {
+      grid-row: 1;
+      grid-column: 1;
+    }
+  
+    .note-container>div:nth-child(2) {
+      grid-row: 1;
+      grid-column: 2;
+    }
+}
